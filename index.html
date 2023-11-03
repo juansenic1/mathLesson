@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dado</title>
+</head>
+<body>
+    <div >
+        <h3>Escoge el rango de la probabilidad que el dado va a sacar. <br> Entre mas grande sea el rango mayor probabilidad, pero menos puntos ganaras.</h3>
+    </div>
+    
+    
+
+    <div class="dado">
+            <div class="dice" id="dice">
+                <div class="face side1"></div>
+                <div class="face side2"></div>
+                <div class="face side3"></div>
+                <div class="face side4"></div>
+                <div class="face side5"></div>
+                <div class="face side6"></div>
+            </div>
+    </div>
+
+    <h1>Puntaje: <span id="puntaje"></span></h1>
+    
+    <button class="Btnjugar" id="btnLanzar" > Tirar</button>
+    <div id="rango">
+        <h3>Elije el rango:</h3>
+        <input type="number" name="num1" id="num1" value="1" min="1" max="6">
+        <input type="number" name="num2" id="num2" min="1" max="6" value="6">
+    </div>
+    <script type="module" src="./scripts/math.js"></script>
+    <script src="./scripts/diceRolling.js"></script>
+
+</body>
+</html>
